@@ -1,10 +1,11 @@
 //Questão 2 - Elabore um método em JS cujo objetivo é resolver a fórmula de Bhaskara. 
+//Mateus Henrique Pacheco Mascarenhas
 
-const ax2 = document.querySelector("#ax2");
-const bx = document.querySelector("#bx");
-const c = document.querySelector("#c");
-const result = document.querySelector("#resultado");
-const btn = document.querySelector("#Calcular");
+const AX2 = document.querySelector("#ax2");
+const BX = document.querySelector("#bx");
+const C = document.querySelector("#c");
+const RESULT = document.querySelector("#resultado");
+const BTN = document.querySelector("#Calcular");
 
 // cálculo de Bhaskara
 function deltaBhaskara(ax2,bx,c){
@@ -17,6 +18,6 @@ function deltaBhaskara(ax2,bx,c){
     }
 }
 
-btn.onclick = ()=>{
-   result.value = deltaBhaskara(ax2.value,bx.value,c.value);
+BTN.onclick = ()=>{
+   RESULT.value = deltaBhaskara(AX2.value,BX.value,C.value);
 }

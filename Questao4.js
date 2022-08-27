@@ -1,14 +1,14 @@
 //Questão - 4 Criar um método que irá receber um valor inteiro como argumento e retornar um array com uma contagem até o argumento como limite.
+//Mateus Henrique Pacheco Mascarenhas
 
-const entrada = document.querySelector("#entrada");
-const btn = document.querySelector("#construir");
-const seq = document.querySelector("#sequencia");
-const result = document.querySelector("#saida");
+const ENTRADA = document.querySelector("#entrada");
+const BTN = document.querySelector("#construir");
+const RESULT = document.querySelector("#saida");
 
-function LuidyMoura(entrada) {
+function LuidyMoura(ENTRADA) {
     let saida = [];
     let cont = 0;
-    while (cont < entrada){
+    while (cont < ENTRADA){
         saida[cont] = cont+1;
         if ( saida[cont]%5 == 0 && saida[cont]%9 == 0 ){
             saida[cont] = "LuidyMoura";
@@ -22,7 +22,6 @@ function LuidyMoura(entrada) {
     return saida;
 }
 
-btn.onclick = () =>{
-    seq.innerHTML = "A sequência é:"
-    result.innerHTML = LuidyMoura(entrada.value);
+BTN.onclick = () =>{
+    RESULT.innerHTML = LuidyMoura(ENTRADA.value);
 }

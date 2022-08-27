@@ -1,27 +1,27 @@
-//Questão 01 - Tipos de Triângulo
+//Questão 01 - Tipos de Triângulo 
+//Mateus Henrique Pacheco Mascarenhas
 
-const l1 = document.querySelector("#lado1");
-const l2 = document.querySelector("#lado2");
-const l3 = document.querySelector("#lado3");
-const result = document.querySelector("#resultado");
-const btn = document.querySelector("#verificar");
-const aviso = document.querySelector("#aviso");
+const L1 = document.querySelector("#lado1");
+const L2 = document.querySelector("#lado2");
+const L3 = document.querySelector("#lado3");
+const RESULT = document.querySelector("#resultado");
+const BTN = document.querySelector("#verificar");
+const AVISO = document.querySelector("#aviso");
 
 
-btn.onclick = () =>{
-    if (l1.value <= 0 || l2.value <= 0 || l3.value <= 0){ //verificar se são valores válidos
-        aviso.innerText = "Tamanho inválido";
-        result.value = "";
+BTN.onclick = () =>{
+    if (L1.value <= 0 || L2.value <= 0 || L3.value <= 0){ //Verificar se são valores válidos.
+        AVISO.innerText = "Tamanho inválido";
+        RESULT.value = "";
     }
     else{
-        if (l1.value == l2.value && l1.value == l3.value && l2.value == l3.value){
-            result.value = "Equilátero";
-        }else if (l1.value == l2.value || l1.value == l3.value || l2.value == l3.value){
-            result.value = "Isósceles";
+        if (L1.value == L2.value && L1.value == L3.value && L2.value == L3.value){
+            RESULT.value = "Equilátero";
+        }else if (L1.value == L2.value || L1.value == L3.value || L2.value == L3.value){
+            RESULT.value = "Isósceles";
         }else{
-            result.value = "Escaleno";
+            RESULT.value = "Escaleno";
         }
-        aviso.innerText = "";
+        AVISO.innerText = "";
     }
-
 }
