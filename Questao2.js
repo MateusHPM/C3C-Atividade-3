@@ -19,5 +19,5 @@ function deltaBhaskara(ax2,bx,c){
 }
 
 BTN.onclick = ()=>{
-   RESULT.value = deltaBhaskara(AX2.value,BX.value,C.value);
+   RESULT.innerHTML = deltaBhaskara(AX2.value,BX.value,C.value);
 }
